@@ -1,46 +1,39 @@
 class Header extends HTMLElement {
     constructor() {
-      super();
+        super();
     }
-  
+
     connectedCallback() {
-      this.innerHTML = `
-        <style>
-          nav {
-            height: 40px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color:  #0a0a23;
-          }
-  
-          ul {
-            padding: 0;
-          }
-          
-          a {
-            font-weight: 700;
-            margin: 0 25px;
-            color: #fff;
-            text-decoration: none;
-          }
-          
-          a:hover {
-            padding-bottom: 5px;
-            box-shadow: inset 0 -2px 0 0 #fff;
-          }
-        </style>
-        <header>
-          <nav>
-            <ul>
-              <li><a href="about.html">About</a></li>
-              <li><a href="work.html">Work</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-          </nav>
-        </header>
-      `;
+        this.innerHTML = `
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <nav class="navbar navbar-expand-lg fixed-top navbarScroll">
+            <div class="container">
+                <a class="navbar-brand" href="#">Dadetyn</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="projects.html">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </nav>
+        `;
     }
-  }
-  
-  customElements.define('header-component', Header);
+}
+
+customElements.define('daw-nav', Header);
