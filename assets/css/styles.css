@@ -10,3 +10,16 @@ nav {
     background-color: var(--bg-color);
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
   }
+
+  .imageAboutPage {
+    width: 250px;
+    height: 300px;
+  }
+
+  .social-link {
+    color: black;
+  }
+
+  .social-link:hover {
+    color: darkgray;
+  }
