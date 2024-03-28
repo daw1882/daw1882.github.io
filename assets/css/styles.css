@@ -23,3 +23,8 @@ nav {
   .social-link:hover {
     color: darkgray;
   }
+
+  .badge {
+    color: white;
+    background-color: blue;
+  }

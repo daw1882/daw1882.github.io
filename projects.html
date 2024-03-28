@@ -19,57 +19,79 @@
     <!-- Projects section -->
 
     <section id="projects">
-        <div class="container">
+        <div class="container mt-4">
             <h1 class="text-center">Projects</h1>
             <div class="row">
-                <div class="col-lg-4 mt-4">
-                    <div class="card servicesText">
+                <div class="col-lg-6 mt-4">
+                    <div class="card projectsText" data-bs-toggle="modal" data-bs-target="#personalWebsite">
                         <div class="card-body">
                             <i class="fas servicesIcon fa-clock"></i>
-                            <h4 class="card-title mt-3">Website Development</h4>
+                            <h4 class="card-title mt-3">Personal Website</h4>
                             <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
                                 Some quick example text to build on the card title and make up the bulk of the card's content.
                             </p>
+                            <span class="badge fs-6">HTML</span>
+                            <span class="badge fs-6">CSS</span>
+                            <span class="badge fs-6">JavaScript</span>
                         </div>
                     </div>  
                 </div>
-                <div class="col-lg-4 mt-4">
-                    <div class="card servicesText">
+
+                <div class="col-lg-6 mt-4">
+                    <div class="card projectsText" data-bs-toggle="modal" data-bs-target="#projectTwo">
                         <div class="card-body">
                             <i class='fas servicesIcon fa-layer-group'></i>
-                            <h4 class="card-title mt-3">Website Design</h4>
+                            <h4 class="card-title mt-3">Project Two</h4>
                             <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
                                 Some quick example text to build on the card title and make up the bulk of the card's content.
                             </p>
+                            <span class="badge fs-6">tech</span>
                         </div>
                     </div>  
                 </div>
             </div>
 
             <div class="row">
-                <div class="col-lg-4 mt-4">
-                    <div class="card servicesText">
+                <div class="col-lg-6 mt-4">
+                    <div class="card projectsText" data-bs-toggle="modal" data-bs-target="#projectThree">
                         <div class="card-body">
                             <i class='fas servicesIcon fa-search'></i>
-                            <h4 class="card-title mt-3">SEO</h4>
+                            <h4 class="card-title mt-3">Project Three</h4>
                             <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
                                 Some quick example text to build on the card title and make up the bulk of the card's content.
                             </p>
+                            <span class="badge fs-6">tech</span>
                         </div>
                     </div>  
                 </div>
 
-                <div class="col-lg-4 mt-4">
-                    <div class="card servicesText">
+                <div class="col-lg-6 mt-4">
+                    <div class="card projectsText" data-bs-toggle="modal" data-bs-target="#projectFour">
                         <div class="card-body">
                             <i class='fas servicesIcon fa-shield-alt'></i>
-                            <h4 class="card-title mt-3">DevOps</h4>
+                            <h4 class="card-title mt-3">Project Four</h4>
                             <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
                                 Some quick example text to build on the card title and make up the bulk of the card's content.
                             </p>
+                            <span class="badge fs-6">tech</span>
                         </div>
                     </div>  
                 </div>
+            </div>
+        </div>
+
+        <!-- Modal popups -->
+        <div class="modal fade" id="personalWebsite" tabindex="-1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  This is body in modal
+                </div>
+              </div>
             </div>
         </div>
     </section>
