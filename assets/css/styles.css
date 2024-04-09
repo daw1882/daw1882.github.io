@@ -1,30 +1,35 @@
-nav {
-    position: sticky;
-    top: 10;
-    left: 0;
-    z-index: 20;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1.5rem 3.5rem;
-    background-color: var(--bg-color);
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
-  }
+section {
+    padding-top: 30px;
+}
 
-  .imageAboutPage {
-    width: 250px;
-    height: 300px;
-  }
+header {
+    padding-top: 30px;
+}
 
-  .social-link {
-    color: black;
-  }
+ul {
+    padding: 0;
+    margin: 0;
+}
 
-  .social-link:hover {
-    color: darkgray;
-  }
+.socials li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 10px;
+}
 
-  .badge {
-    color: white;
-    background-color: blue;
-  }
+.active {
+    background-color: aqua;
+}
+
+.card:hover {
+    background-color: antiquewhite;
+}
+
+.card-group {
+    list-style: none;
+    padding-left: 0;
+}
+
+.sticky-top {
+    top: 30px;
+}
