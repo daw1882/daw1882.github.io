@@ -6,6 +6,10 @@
     background-color: aqua;
 }
 
+.badge {
+    background-color: blue;
+}
+
 @media (min-width: 992px) {
     .w-lg-50 {
         width: 50%;
