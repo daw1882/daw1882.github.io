@@ -1,13 +1,56 @@
-.active {
-    background-color: aqua;
+.primary-bg { 
+	background: #323643; 
+}
+	
+.secondary-bg { 
+	background: #606470; 
+}
+
+.tertiary-bg { 
+	background: #93deff; 
+}
+
+.quaternary-bg { 
+	background: #f7f7f7; 
+}
+
+.primary-text {
+    color: #93deff;
+}
+
+.secondary-text {
+    color: #f7f7f7;
+}
+
+.tertiary-text {
+    color: black;
 }
 
 .card:hover {
-    background-color: aqua;
+    background: #606470;
+    box-shadow: 10px 10px 10px;
 }
 
-.badge {
-    background-color: blue;
+.link-50-hover:hover {
+    opacity: 50%;
+}
+
+.nav-link.active {
+    color: #93deff !important;
+    text-decoration: solid;
+    background: none !important;
+}
+
+.nav-link {
+    color: #f7f7f7 !important;
+}
+
+.nav-link:hover {
+    color: #323643;
+}
+
+a {
+    text-decoration: none;
 }
 
 @media (min-width: 992px) {
@@ -20,8 +63,8 @@
     }
 }
 
-@media (min-height: 500px) {
-    .h-lg-75 {
-        height: 75%;
+@media (min-width: 576px) {
+    .w-sm-75 {
+        width: 75%;
     }
 }
