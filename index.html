@@ -22,7 +22,7 @@
                         <p class="mt-2 secondary-text" style="width: 340px; max-width: 85vw;">Some random description headline that is about a sentence long and describes what I do.</p>
 
                         <nav class="mt-5 pt-3 d-none d-lg-block">
-                            <nav class="nav flex-column">
+                            <nav class="nav col-4">
                                 <a class="nav-link" href="#about">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-double-right" viewBox="0 0 16 16">
                                         <path fill-rule="evenodd" d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708"/>
@@ -77,14 +77,14 @@
             <!-- Right Side-->
             <main id="content" class="d-lg-flex flex-column w-lg-50 pt-5" data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="0" data-bs-smooth-scroll="true" tabindex="0">
                 <section class="p-0 mt-4 mt-lg-5" id="about">
-                    <h4 class="primary-text">About</h4>
+                    <h4 class="primary-text d-block d-lg-none mb-2">About</h4>
                     <p class="secondary-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                     <p class="secondary-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                     <p class="secondary-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </section>
 
-                <section id="experience" class="mt-5">
-                    <h4 class="primary-text">Experience</h4>
+                <section id="experience" class="mt-5 pt-3">
+                    <h4 class="primary-text d-block d-lg-none mb-2">Experience</h4>
                     <ol class="list-unstyled">
                         <li class="mb-3">
                             <!-- Card -->
@@ -94,8 +94,8 @@
                                         <p class="card-text secondary-text">date - date</p>
                                     </div>
                                     <div class="col">
-                                        <h3 class="card-title primary-text mt-1">Company</h3>
-                                        <h5 class="card-subtitle primary-text mt-1">Position</h5>
+                                        <h5 class="card-title primary-text mt-1">Company</h5>
+                                        <h6 class="card-subtitle primary-text mt-1">Position</h6>
                                         <p class="card-text secondary-text mt-2">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                         <span class="badge tertiary-bg tertiary-text fs-6">Skill</span>
                                         <span class="badge tertiary-bg tertiary-text fs-6">Skill</span>
@@ -215,6 +215,49 @@
                                 </div>
                             </div>
                         </li>
+                        <li class="mb-3">
+                            <!-- Card -->
+                            <div class="card border-0 primary-bg" data-bs-toggle="modal" data-bs-target="#companyFour">
+                                <div class="row g-0 card-body">
+                                    <div class="col-sm-2 me-sm-2">
+                                        <p class="card-text secondary-text">date - date</p>
+                                    </div>
+                                    <div class="col">
+                                        <h5 class="card-title primary-text mt-1">Company</h5>
+                                        <h6 class="card-subtitle primary-text mt-1">Position</h6>
+                                        <p class="card-text secondary-text mt-2">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                        <span class="badge tertiary-bg tertiary-text fs-6">Skill</span>
+                                        <span class="badge tertiary-bg tertiary-text fs-6">Skill</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Modal popup -->
+                            <div class="modal fade" id="companyFour" tabindex="-1">
+                                <div class="modal-dialog modal-xl">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <div class="d-flex justify-content-between" style="width: 100vw;">
+                                                <h1 class="modal-title fs-3">Company</h1>
+                                                <button type="button" class="btn secondary-text" data-bs-dismiss="modal" aria-label="Close">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                                                        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h2 class="fs-4">Description</h2>
+                                            <p>Some text about the company.</p>
+                                            <h2 class="fs-4">Contributions</h2>
+                                            <p>Some text about the projects.</p>
+                                            <h2 class="fs-4">Skills</h2>
+                                            <p>Some text about the skills.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
                     </ol>
 
                     <div class="ms-3">
@@ -227,8 +270,8 @@
                     </div>
                 </section>
 
-                <section id="projects" class="mt-5">
-                    <h4 class="primary-text">Projects</h4>
+                <section id="projects" class="mt-5 pt-3">
+                    <h4 class="primary-text d-block d-lg-none mb-2">Projects</h4>
                     <ol class="list-unstyled">
                         <li class="mb-3">
                             <!-- Card --> 
@@ -275,6 +318,32 @@
                                     <span class="badge tertiary-bg tertiary-text fs-6">Skill</span>
                                 </div>
                             </div> 
+
+                            <!-- Modal popup -->
+                            <div class="modal custom fade" id="projectTwo" tabindex="-1">
+                                <div class="modal-dialog modal-xl">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <div class="d-flex justify-content-between" style="width: 100vw;">
+                                                <h1 class="modal-title fs-3">Company</h1>
+                                                <button type="button" class="btn secondary-text" data-bs-dismiss="modal" aria-label="Close">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                                                        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h2 class="fs-4 primary-text">Description</h2>
+                                            <p>Some text about the project.</p>
+                                            <h2 class="fs-4">Why?</h2>
+                                            <p>Some text about the project.</p>
+                                            <h2 class="fs-4">Challenges</h2>
+                                            <p>Some text about the project.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </li>
                         <li class="mb-3">
                             <!-- Card --> 
@@ -285,6 +354,32 @@
                                     <span class="badge tertiary-bg tertiary-text fs-6">Skill</span>
                                 </div>
                             </div> 
+
+                            <!-- Modal popup -->
+                            <div class="modal custom fade" id="projectThree" tabindex="-1">
+                                <div class="modal-dialog modal-xl">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <div class="d-flex justify-content-between" style="width: 100vw;">
+                                                <h1 class="modal-title fs-3">Company</h1>
+                                                <button type="button" class="btn secondary-text" data-bs-dismiss="modal" aria-label="Close">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                                                        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h2 class="fs-4 primary-text">Description</h2>
+                                            <p>Some text about the project.</p>
+                                            <h2 class="fs-4">Why?</h2>
+                                            <p>Some text about the project.</p>
+                                            <h2 class="fs-4">Challenges</h2>
+                                            <p>Some text about the project.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </li>
                     </ol>
 
