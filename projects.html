@@ -12,124 +12,437 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
     <!-- Projects section -->
-    <div class="container mt-4 pt-4">
-        <a class="secondary-text link-50-hover ms-2" href="/">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
-            </svg>
-            <span>Dadetyn Wood</span>
-        </a>
-        <h1 class="primary-text mt-2 ms-2">All Projects</h1>
-        <div class="row row-cols-1 row-cols-lg-2 gx-4 gy-4 mt-2">
-            <div class="col">
-                <!-- Card --> 
-                <div class="card border-0 primary-bg" data-bs-toggle="modal" data-bs-target="#projectOne">
-                    <div class="card-body">
-                        <h5 class="card-title primary-text">Project title</h5>
-                        <p class="card-text secondary-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <span class="badge tertiary-bg tertiary-text">Skill</span>
-                    </div>
-                </div> 
+    <div class="container-md mt-4 pt-4">
+        <div class="row justify-content-center mt-md-4 mb-4">
+            <div class="col-lg-8 col-xl-7">
+                <a class="secondary-text link-50-hover ms-2 fw-bold" href="/">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
+                    </svg>
+                    <span>Dadetyn Wood</span>
+                </a>
+                <h1 class="primary-text mt-2 ms-2">All Projects</h1>
+        
+                <!-- Left Column -->
+            
+                <ol class="list-unstyled">
+                    <li class="mb-3">
+                        <!-- Card --> 
+                        <div class="card border-0 primary-bg " data-bs-toggle="modal" data-bs-target="#projectOne">
+                            <div class="card-body">
+                                <h5 class="card-title primary-text">GraphGrad</h5>
+                                <p class="card-text secondary-text">
+                                    Custom C++ tensor library with pybinding support that allows many standard
+                                    tensor operations.    
+                                </p>
+                                <ul class="list-unstyled d-flex flex-wrap">
+                                    <li class="me-2 mt-2">
+                                        <span class="badge tertiary-bg tertiary-text fs-6">C++</span>
+                                    </li>
+                                    <li class="me-2 mt-2">
+                                        <span class="badge tertiary-bg tertiary-text fs-6">Python</span>
+                                    </li>
+                                    <li class="me-2 mt-2">
+                                        <span class="badge tertiary-bg tertiary-text fs-6">CUDA</span>
+                                    </li>
+                                    <li class="me-2 mt-2">
+                                        <span class="badge tertiary-bg tertiary-text fs-6">OpenMP</span>
+                                    </li>
+                                    <li class="me-2 mt-2">
+                                        <span class="badge tertiary-bg tertiary-text fs-6">Pybind</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div> 
 
-                <!-- Modal popup -->
-                <div class="modal fade" id="projectOne" tabindex="-1">
-                    <div class="modal-dialog modal-xl">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <div class="d-flex justify-content-between" style="width: 100vw;">
-                                    <h1 class="modal-title fs-3">Company</h1>
-                                    <button type="button" class="btn secondary-text" data-bs-dismiss="modal" aria-label="Close">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
-                                            <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
-                                        </svg>
-                                    </button>
+                        <!-- Modal popup -->
+                        <div class="modal custom fade" id="projectOne" tabindex="-1">
+                            <div class="modal-dialog modal-xl">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <div class="d-flex justify-content-between" style="width: 100vw;">
+                                            <h1 class="modal-title fs-3">GraphGrad</h1>
+                                            <button type="button" class="btn secondary-text" data-bs-dismiss="modal" aria-label="Close">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                                                    <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="modal-body">
+                                        <h2 class="fs-4 primary-text">Description</h2>
+                                        <p>Some text about the project. Some text about the project. Some text about the project. Some text about the project.</p>
+                                        <h2 class="fs-4">Why?</h2>
+                                        <p>Some text about the project. Some text about the project. Some text about the project. Some text about the project.</p>
+                                        <h2 class="fs-4">My Contributions</h2>
+                                        <p>Some text about the project.</p>
+                                        <h2 class="fs-4">Challenges</h2>
+                                        <p>Some text about the project. Some text about the project. Some text about the project.</p>
+                                    </div>
                                 </div>
                             </div>
-                        <div class="modal-body">
-                            <h2 class="fs-4">Description</h2>
-                            <p>Some text about the project.</p>
-                            <h2 class="fs-4">Why?</h2>
-                            <p>Some text about the project.</p>
-                            <h2 class="fs-4">Challenges</h2>
-                            <p>Some text about the project.</p>
                         </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                    </li>
 
-            <div class="col">
-                <!-- Card --> 
-                <div class="card border-0 primary-bg" data-bs-toggle="modal" data-bs-target="#projectTwo">
-                    <div class="card-body">
-                        <h5 class="card-title primary-text">Project title</h5>
-                        <p class="card-text secondary-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <span class="badge tertiary-bg tertiary-text">Skill</span>
-                    </div>
-                </div> 
+                    <li class="mb-3">
+                        <!-- Card --> 
+                        <div class="card border-0 primary-bg" data-bs-toggle="modal" data-bs-target="#projectTwo">
+                            <div class="card-body">
+                                <h5 class="card-title primary-text">Text Recovery from Palimpsests</h5>
+                                <p class="card-text secondary-text">
+                                    A spatial variational autoencoder for the purposes of recovering text of from Palimpsests,
+                                    or old manuscripts which were chemically altered to be reused, using multi-spectral images.    
+                                </p>
+                                <ul class="list-unstyled d-flex flex-wrap">
+                                    <li class="me-2 mt-2">
+                                        <span class="badge tertiary-bg tertiary-text fs-6">Python</span>
+                                    </li>
+                                    <li class="me-2 mt-2">
+                                        <span class="badge tertiary-bg tertiary-text fs-6">PyTorch</span>
+                                    </li>
+                                    <li class="me-2 mt-2">
+                                        <span class="badge tertiary-bg tertiary-text fs-6">Computer Vision</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div> 
 
-                <!-- Modal popup -->
-                <div class="modal fade" id="projectTwo" tabindex="-1">
-                    <div class="modal-dialog modal-xl">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <div class="d-flex justify-content-between" style="width: 100vw;">
-                                    <h1 class="modal-title fs-3">Company</h1>
-                                    <button type="button" class="btn secondary-text" data-bs-dismiss="modal" aria-label="Close">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
-                                            <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
-                                        </svg>
-                                    </button>
+                        <!-- Modal popup -->
+                        <div class="modal fade" id="projectTwo" tabindex="-1">
+                            <div class="modal-dialog modal-xl">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <div class="d-flex justify-content-between" style="width: 100vw;">
+                                            <h1 class="modal-title fs-3">Text Recovery from Palimpsests</h1>
+                                            <button type="button" class="btn secondary-text" data-bs-dismiss="modal" aria-label="Close">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                                                    <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                <div class="modal-body">
+                                    <h2 class="fs-4">Description</h2>
+                                    <p>Some text about the project.</p>
+                                    <h2 class="fs-4">Why?</h2>
+                                    <p>Some text about the project.</p>
+                                    <h2 class="fs-4">Challenges</h2>
+                                    <p>Some text about the project.</p>
+                                </div>
                                 </div>
                             </div>
-                        <div class="modal-body">
-                            <h2 class="fs-4">Description</h2>
-                            <p>Some text about the project.</p>
-                            <h2 class="fs-4">Why?</h2>
-                            <p>Some text about the project.</p>
-                            <h2 class="fs-4">Challenges</h2>
-                            <p>Some text about the project.</p>
                         </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                    </li>
 
-            <div class="col">
-                <!-- Card --> 
-                <div class="card border-0 primary-bg" data-bs-toggle="modal" data-bs-target="#projectThree">
-                    <div class="card-body">
-                        <h5 class="card-title primary-text">Project title</h5>
-                        <p class="card-text secondary-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <span class="badge tertiary-bg tertiary-text">Skill</span>
-                    </div>
-                </div> 
+                    <li class="mb-3">
+                        <!-- Card --> 
+                        <div class="card border-0 primary-bg" data-bs-toggle="modal" data-bs-target="#projectThree">
+                            <div class="card-body">
+                                <h5 class="card-title primary-text">Speaker Diarization in Expressive Dialogues</h5>
+                                <h6 class="card-subtitle primary-text mb-2">Master's Capstone Project</h6>
+                                <p class="card-text secondary-text">
+                                    A joint, end-to-end, speaker diarization and automatic speech recognition system
+                                    trained and evaluated on expressive dialogues and compared to traditional speaker
+                                    diarization methods.
+                                </p>
+                                <ul class="list-unstyled d-flex flex-wrap">
+                                    <li class="me-2 mt-2">
+                                        <span class="badge tertiary-bg tertiary-text fs-6">Python</span>
+                                    </li>
+                                    <li class="me-2 mt-2">
+                                        <span class="badge tertiary-bg tertiary-text fs-6">PyTorch</span>
+                                    </li>
+                                    <li class="me-2 mt-2">
+                                        <span class="badge tertiary-bg tertiary-text fs-6">Speech Processing</span>
+                                    </li>
+                                    <li class="me-2 mt-2">
+                                        <span class="badge tertiary-bg tertiary-text fs-6">Research</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div> 
 
-                <!-- Modal popup -->
-                <div class="modal fade" id="projectThree" tabindex="-1">
-                    <div class="modal-dialog modal-xl">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <div class="d-flex justify-content-between" style="width: 100vw;">
-                                    <h1 class="modal-title fs-3">Company</h1>
-                                    <button type="button" class="btn secondary-text" data-bs-dismiss="modal" aria-label="Close">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
-                                            <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
-                                        </svg>
-                                    </button>
+                        <!-- Modal popup -->
+                        <div class="modal fade" id="projectThree" tabindex="-1">
+                            <div class="modal-dialog modal-xl">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <div class="d-flex justify-content-between" style="width: 100vw;">
+                                            <h1 class="modal-title fs-3">Speaker Diarization in Expressive Dialogues</h1>
+                                            <button type="button" class="btn secondary-text" data-bs-dismiss="modal" aria-label="Close">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                                                    <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                <div class="modal-body">
+                                    <h2 class="fs-4">Description</h2>
+                                    <p>Some text about the project.</p>
+                                    <h2 class="fs-4">Why?</h2>
+                                    <p>Some text about the project.</p>
+                                    <h2 class="fs-4">Challenges</h2>
+                                    <p>Some text about the project.</p>
+                                </div>
                                 </div>
                             </div>
-                        <div class="modal-body">
-                            <h2 class="fs-4">Description</h2>
-                            <p>Some text about the project.</p>
-                            <h2 class="fs-4">Why?</h2>
-                            <p>Some text about the project.</p>
-                            <h2 class="fs-4">Challenges</h2>
-                            <p>Some text about the project.</p>
                         </div>
+                    </li>
+
+                    <li class="mb-3">
+                        <!-- Card --> 
+                        <div class="card border-0 primary-bg" data-bs-toggle="modal" data-bs-target="#projectFour">
+                            <div class="card-body">
+                                <h5 class="card-title primary-text">Traffic Camera Reprojection to Supplement Autonomous Perception</h5>
+                                <p class="card-text secondary-text">
+                                    A lightweight system for cooperative perception between LiDARs on autonomous vehicles 
+                                    and monocular traffic cameras.
+                                </p>
+                                <ul class="list-unstyled d-flex flex-wrap">
+                                    <li class="me-2 mt-2">
+                                        <span class="badge tertiary-bg tertiary-text fs-6">Python</span>
+                                    </li>
+                                    <li class="me-2 mt-2">
+                                        <span class="badge tertiary-bg tertiary-text fs-6">Computer Vision</span>
+                                    </li>
+                                    <li class="me-2 mt-2">
+                                        <span class="badge tertiary-bg tertiary-text fs-6">CARLA</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div> 
+
+                        <!-- Modal popup -->
+                        <div class="modal fade" id="projectFour" tabindex="-1">
+                            <div class="modal-dialog modal-xl">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <div class="d-flex justify-content-between" style="width: 100vw;">
+                                            <h1 class="modal-title fs-3">Traffic Camera Reprojection to Supplement Autonomous Perception</h1>
+                                            <button type="button" class="btn secondary-text" data-bs-dismiss="modal" aria-label="Close">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                                                    <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                <div class="modal-body">
+                                    <h2 class="fs-4">Description</h2>
+                                    <p>Some text about the project.</p>
+                                    <h2 class="fs-4">Why?</h2>
+                                    <p>Some text about the project.</p>
+                                    <h2 class="fs-4">Challenges</h2>
+                                    <p>Some text about the project.</p>
+                                </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
+                    </li>
+
+                    <li class="mb-3">
+                        <!-- Card --> 
+                        <div class="card border-0 primary-bg" data-bs-toggle="modal" data-bs-target="#projectFive">
+                            <div class="card-body">
+                                <h5 class="card-title primary-text">Speech Emotion Recongizer</h5>
+                                <p class="card-text secondary-text">
+                                    An emotion recognition model trained to identify 7 different emotions.
+                                </p>
+                                <ul class="list-unstyled d-flex flex-wrap">
+                                    <li class="me-2 mt-2">
+                                        <span class="badge tertiary-bg tertiary-text fs-6">Python</span>
+                                    </li>
+                                    <li class="me-2 mt-2">
+                                        <span class="badge tertiary-bg tertiary-text fs-6">TensorFlow</span>
+                                    </li>
+                                    <li class="me-2 mt-2">
+                                        <span class="badge tertiary-bg tertiary-text fs-6">Speech Processing</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div> 
+
+                        <!-- Modal popup -->
+                        <div class="modal fade" id="projectFive" tabindex="-1">
+                            <div class="modal-dialog modal-xl">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <div class="d-flex justify-content-between" style="width: 100vw;">
+                                            <h1 class="modal-title fs-3">Speech Emotion Recongizer</h1>
+                                            <button type="button" class="btn secondary-text" data-bs-dismiss="modal" aria-label="Close">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                                                    <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                <div class="modal-body">
+                                    <h2 class="fs-4">Description</h2>
+                                    <p>Some text about the project.</p>
+                                    <h2 class="fs-4">Why?</h2>
+                                    <p>Some text about the project.</p>
+                                    <h2 class="fs-4">Challenges</h2>
+                                    <p>Some text about the project.</p>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="mb-3">
+                        <!-- Card --> 
+                        <div class="card border-0 primary-bg" data-bs-toggle="modal" data-bs-target="#projectSix">
+                            <div class="card-body">
+                                <h5 class="card-title primary-text">Twitter Depression Detection</h5>
+                                <p class="card-text secondary-text">
+                                    A model to predict a person's likelihood for depression based on the
+                                    content and activity of their Tweets on Twitter (now X).
+                                </p>
+                                <ul class="list-unstyled d-flex flex-wrap">
+                                    <li class="me-2 mt-2">
+                                        <span class="badge tertiary-bg tertiary-text fs-6">Python</span>
+                                    </li>
+                                    <li class="me-2 mt-2">
+                                        <span class="badge tertiary-bg tertiary-text fs-6">Sci-kit Learn</span>
+                                    </li>
+                                    <li class="me-2 mt-2">
+                                        <span class="badge tertiary-bg tertiary-text fs-6">Feature Engineering</span>
+                                    </li>
+                                    <li class="me-2 mt-2">
+                                        <span class="badge tertiary-bg tertiary-text fs-6">Natural Language Processing</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div> 
+
+                        <!-- Modal popup -->
+                        <div class="modal fade" id="projectSix" tabindex="-1">
+                            <div class="modal-dialog modal-xl">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <div class="d-flex justify-content-between" style="width: 100vw;">
+                                            <h1 class="modal-title fs-3">Twitter Depression Detection</h1>
+                                            <button type="button" class="btn secondary-text" data-bs-dismiss="modal" aria-label="Close">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                                                    <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                <div class="modal-body">
+                                    <h2 class="fs-4">Description</h2>
+                                    <p>Some text about the project.</p>
+                                    <h2 class="fs-4">Why?</h2>
+                                    <p>Some text about the project.</p>
+                                    <h2 class="fs-4">Challenges</h2>
+                                    <p>Some text about the project.</p>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="mb-3">
+                        <!-- Card --> 
+                        <div class="card border-0 primary-bg" data-bs-toggle="modal" data-bs-target="#projectSeven">
+                            <div class="card-body">
+                                <h5 class="card-title primary-text">Web Checkers</h5>
+                                <p class="card-text secondary-text">
+                                    A web application for users to play checkers against one another or against a simple
+                                    AI.
+                                </p>
+                                <ul class="list-unstyled d-flex flex-wrap">
+                                    <li class="me-2 mt-2">
+                                        <span class="badge tertiary-bg tertiary-text fs-6">Java</span>
+                                    </li>
+                                    <li class="me-2 mt-2">
+                                        <span class="badge tertiary-bg tertiary-text fs-6">Agile</span>
+                                    </li>
+                                    <li class="me-2 mt-2">
+                                        <span class="badge tertiary-bg tertiary-text fs-6">Spark</span>
+                                    </li>
+                                    <li class="me-2 mt-2">
+                                        <span class="badge tertiary-bg tertiary-text fs-6">JavaScript</span>
+                                    </li>
+                                    <li class="me-2 mt-2">
+                                        <span class="badge tertiary-bg tertiary-text fs-6">Maven</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div> 
+
+                        <!-- Modal popup -->
+                        <div class="modal fade" id="projectSeven" tabindex="-1">
+                            <div class="modal-dialog modal-xl">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <div class="d-flex justify-content-between" style="width: 100vw;">
+                                            <h1 class="modal-title fs-3">Web Checkers</h1>
+                                            <button type="button" class="btn secondary-text" data-bs-dismiss="modal" aria-label="Close">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                                                    <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                <div class="modal-body">
+                                    <h2 class="fs-4">Description</h2>
+                                    <p>Some text about the project.</p>
+                                    <h2 class="fs-4">Why?</h2>
+                                    <p>Some text about the project.</p>
+                                    <h2 class="fs-4">Challenges</h2>
+                                    <p>Some text about the project.</p>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="mb-3">
+                        <!-- Card --> 
+                        <div class="card border-0 primary-bg" data-bs-toggle="modal" data-bs-target="#projectEight">
+                            <div class="card-body">
+                                <h5 class="card-title primary-text">Voice Cloning Resume Website</h5>
+                                <p class="card-text secondary-text">
+                                    A resume website demo with a ChatGPT-powered chatbot that answers questions
+                                    about the provided resume and plays responses using a cloned voice.
+                                </p>
+                                <ul class="list-unstyled d-flex flex-wrap">
+                                    <li class="me-2 mt-2">
+                                        <span class="badge tertiary-bg tertiary-text fs-6">Python</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div> 
+
+                        <!-- Modal popup -->
+                        <div class="modal fade" id="projectEight" tabindex="-1">
+                            <div class="modal-dialog modal-xl">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <div class="d-flex justify-content-between" style="width: 100vw;">
+                                            <h1 class="modal-title fs-3">Voice Cloning Resume Website</h1>
+                                            <button type="button" class="btn secondary-text" data-bs-dismiss="modal" aria-label="Close">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                                                    <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                <div class="modal-body">
+                                    <h2 class="fs-4">Description</h2>
+                                    <p>Some text about the project.</p>
+                                    <h2 class="fs-4">Why?</h2>
+                                    <p>Some text about the project.</p>
+                                    <h2 class="fs-4">Challenges</h2>
+                                    <p>Some text about the project.</p>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                </ol>
+
             </div>
         </div>
     </div>

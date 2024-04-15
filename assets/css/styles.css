@@ -5,10 +5,14 @@
     --quaternary: #f7f7f7;
 }
 
-body {
+* {
     font-family: "Courier New", monospace;
-    font-size: 1.0em;
+    font-size: 1.0rem;
 }
+
+/* p {
+    font-size: 0.95em;
+} */
 
 .primary-bg { 
 	background: var(--primary); 
@@ -38,10 +42,11 @@ body {
     color: var(--primary);
 }
 
-/* .badge {
-    background: #1a4c61;
-    color: var(--tertiary);
-} */
+.badge {
+    /* background: #1a4c61;
+    color: var(--tertiary); */
+    font-weight: bold;
+}
 
 .modal-content {
     background: var(--primary);
@@ -71,7 +76,7 @@ body {
 }
 
 .nav-link {
-    color: var(--quaternary);
+    color: var(--quaternary) !important;
 }
 
 .nav-link path.hidden {
@@ -84,7 +89,7 @@ body {
 }
 
 .nav-link.active, .nav-link:hover{
-    color: var(--tertiary);
+    color: var(--tertiary) !important;
     background: none;
     margin-left: 10px;
     font-size: 1.2em;
