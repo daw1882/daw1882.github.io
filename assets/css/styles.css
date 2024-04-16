@@ -43,9 +43,8 @@
 }
 
 .badge {
-    /* background: #1a4c61;
-    color: var(--tertiary); */
     font-weight: bold;
+    font-size: 0.9rem;
 }
 
 .modal-content {
