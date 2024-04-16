@@ -275,7 +275,337 @@
                 <section id="projects" class="mt-5 pt-3">
                     <h4 class="primary-text d-block d-lg-none mb-2">Projects</h4>
                     <ol class="list-unstyled">
-                        
+                        <li class="mb-3">
+                            <!-- Card --> 
+                            <div class="card border-0 primary-bg " data-bs-toggle="modal" data-bs-target="#graphGrad">
+                                <div class="card-body">
+                                    <h5 class="card-title primary-text">GraphGrad</h5>
+                                    <p class="card-text secondary-text">
+                                        Custom C++ tensor library with pybinding support that allows many standard
+                                        tensor operations.    
+                                    </p>
+                                    <ul class="list-unstyled d-flex flex-wrap">
+                                        <li class="me-2 mt-2">
+                                            <span class="badge tertiary-bg tertiary-text fs-6">C++</span>
+                                        </li>
+                                        <li class="me-2 mt-2">
+                                            <span class="badge tertiary-bg tertiary-text fs-6">Python</span>
+                                        </li>
+                                        <li class="me-2 mt-2">
+                                            <span class="badge tertiary-bg tertiary-text fs-6">CUDA</span>
+                                        </li>
+                                        <li class="me-2 mt-2">
+                                            <span class="badge tertiary-bg tertiary-text fs-6">OpenMP</span>
+                                        </li>
+                                        <li class="me-2 mt-2">
+                                            <span class="badge tertiary-bg tertiary-text fs-6">Pybind</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div> 
+    
+                            <!-- Modal popup -->
+                            <div class="modal custom fade" id="graphGrad" tabindex="-1">
+                                <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <div class="d-flex justify-content-between" style="width: 100vw;">
+                                                <h1 class="modal-title fs-3">GraphGrad</h1>
+                                                <button type="button" class="btn secondary-text" data-bs-dismiss="modal" aria-label="Close">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                                                        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="fs-3">
+                                                <a class="secondary-text link-50-hover fw-bold" href="https://github.com/qxzcode/CSCI-739-GraphGrad" target="_blank" rel="noreferrer noopener">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16" style="transform: translate(0px, -2px);">
+                                                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                                                    </svg>
+                                                    <span>Github Repo</span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-up-right-short" viewBox="0 0 16 16">
+                                                        <path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5"/>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                            <h2 class="fs-4 mt-4">Description</h2>
+                                            <p>
+                                                A custom built C++ tensor library to perform matrix and tensor operations
+                                                efficiently with automatic differentiation support for machine learning
+                                                algorithms (a simplified version of PyTorch/TensorFlow). The library allows
+                                                for multiple operations such as add, subtract, matmul, etc. and supports
+                                                Python usage through pybindings. Multiple optimization techniques were 
+                                                implemented such as as Lazy Evaluation, OpenMP CPU optimizations, SIMD 
+                                                computation, Common Subexpression Elimination, and GPU kernels. For more
+                                                information and documentation for the library, check out the GitHub
+                                                repository linked above.
+                                            </p>
+                                            <h2 class="fs-4 mt-4">Why?</h2>
+                                            <p>
+                                                This was a semester group project for a course on Machine Learning System 
+                                                Implementations and our group wanted to better understand what it took to
+                                                implement the machine learning libraries we've so often used. 
+                                            </p>
+                                            <h2 class="fs-4 mt-4">My Contributions</h2>
+                                            <p>
+                                                We collaborated to come up with the overall architecture design and I
+                                                implemented many of the standard operations, some of the GPU kernels,
+                                                OpenMP optimizations, a couple of the backpropogation functions,
+                                                majority of the pytests, and initial benchmark comparisons to
+                                                evaluate our library's efficiency.    
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+    
+                        <li class="mb-3">
+                            <!-- Card --> 
+                            <div class="card border-0 primary-bg" data-bs-toggle="modal" data-bs-target="#textRecovery">
+                                <div class="card-body">
+                                    <h5 class="card-title primary-text">Text Recovery from Palimpsests</h5>
+                                    <p class="card-text secondary-text">
+                                        Spatial revising variational autoencoder for the purposes of recovering text of 
+                                        from Palimpsests, or old manuscripts which were chemically altered to be reused,
+                                        using multi-spectral images.    
+                                    </p>
+                                    <ul class="list-unstyled d-flex flex-wrap">
+                                        <li class="me-2 mt-2">
+                                            <span class="badge tertiary-bg tertiary-text fs-6">Python</span>
+                                        </li>
+                                        <li class="me-2 mt-2">
+                                            <span class="badge tertiary-bg tertiary-text fs-6">PyTorch</span>
+                                        </li>
+                                        <li class="me-2 mt-2">
+                                            <span class="badge tertiary-bg tertiary-text fs-6">Computer Vision</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div> 
+    
+                            <!-- Modal popup -->
+                            <div class="modal custom fade" id="textRecovery" tabindex="-1">
+                                <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <div class="d-flex justify-content-between" style="width: 100vw;">
+                                                <h1 class="modal-title fs-3">Text Recovery from Palimpsests</h1>
+                                                <button type="button" class="btn secondary-text" data-bs-dismiss="modal" aria-label="Close">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                                                        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="fs-3">
+                                                <a class="secondary-text link-50-hover fw-bold" href="https://github.com/daw1882/Spatial-Revised-VAE" target="_blank" rel="noreferrer noopener">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16" style="transform: translate(0px, -2px);">
+                                                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                                                    </svg>
+                                                    <span>Github Repo</span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-up-right-short" viewBox="0 0 16 16">
+                                                        <path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5"/>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                            <h2 class="fs-4 mt-4">Description</h2>
+                                            <p>
+                                                A PyTorch implementation of the 
+                                                <a class="secondary-text fw-bold link-50-hover" href="https://ieeexplore.ieee.org/abstract/document/9109663" target="_blank" rel="noopener noreferrer">
+                                                    Spatial Revising Variational Autoencoder
+                                                </a>  
+                                                from Yu et al. for extracting useful features from hyperspectral
+                                                image data. After implementation, this model was then used to extract
+                                                features from multi-spectral images of 
+                                                <a class="secondary-text fw-bold link-50-hover" href="https://en.wikipedia.org/wiki/Palimpsest" target="_blank" rel="noopener noreferrer">
+                                                    palimpsests 
+                                                </a> 
+                                                in order to perform segmentation on images and recover hidden or damaged 
+                                                text.
+                                            </p>
+                                            <h2 class="fs-4 mt-4">Why?</h2>
+                                            <p>
+                                                This was a class project for a Neural Networks and Machine Learning
+                                                course done in a group. For our project, we chose our topic to be 
+                                                text recovery from palimpsests as one of the group members was an image
+                                                science major working on a Capstone project in the same topic and had 
+                                                access to multi-spectral image data for training and inference. While
+                                                searching for potential model architectures that would work well,
+                                                we came across a Spatial Revising Variational Autoencoder used for segmentation
+                                                of hyperspectral images. Since this was exactly what we wanted to do,
+                                                we began our project as an application study to apply this model to 
+                                                our topic.
+                                            </p>
+                                            <h2 class="fs-4 mt-4">My Contributions</h2>
+                                            <p>
+                                                I implemented the CNN module, parts of the LSTM module, modified the loss
+                                                function, built most of the encoder and decoder, and trained and evaluated
+                                                the model on our data.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+    
+                        <li class="mb-3">
+                            <!-- Card --> 
+                            <div class="card border-0 primary-bg" data-bs-toggle="modal" data-bs-target="#projectThree">
+                                <div class="card-body">
+                                    <h5 class="card-title primary-text">Speaker Diarization in Expressive Dialogues</h5>
+                                    <h6 class="card-subtitle primary-text mb-2">Master's Capstone Project</h6>
+                                    <p class="card-text secondary-text">
+                                        Joint, end-to-end, speaker diarization and automatic speech recognition system
+                                        trained and evaluated on expressive dialogues and compared to traditional speaker
+                                        diarization methods.
+                                    </p>
+                                    <ul class="list-unstyled d-flex flex-wrap">
+                                        <li class="me-2 mt-2">
+                                            <span class="badge tertiary-bg tertiary-text fs-6">Python</span>
+                                        </li>
+                                        <li class="me-2 mt-2">
+                                            <span class="badge tertiary-bg tertiary-text fs-6">PyTorch</span>
+                                        </li>
+                                        <li class="me-2 mt-2">
+                                            <span class="badge tertiary-bg tertiary-text fs-6">Speech Processing</span>
+                                        </li>
+                                        <li class="me-2 mt-2">
+                                            <span class="badge tertiary-bg tertiary-text fs-6">Research</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div> 
+    
+                            <!-- Modal popup -->
+                            <div class="modal custom fade" id="projectThree" tabindex="-1">
+                                <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <div class="d-flex justify-content-between" style="width: 100vw;">
+                                                <h1 class="modal-title fs-3">Speaker Diarization in Expressive Dialogues</h1>
+                                                <button type="button" class="btn secondary-text" data-bs-dismiss="modal" aria-label="Close">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                                                        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h2 class="fs-4 mt-4">Description</h2>
+                                            <p>
+                                                An end-to-end, joint
+                                                <a class="secondary-text fw-bold link-50-hover" href="https://en.wikipedia.org/wiki/Speaker_diarisation" target="_blank" rel="noopener noreferrer">
+                                                    Speaker Diarization
+                                                </a>
+                                                and 
+                                                <a class="secondary-text fw-bold link-50-hover" href="https://en.wikipedia.org/wiki/Speech_recognition" target="_blank" rel="noopener noreferrer">
+                                                    Automatic Speech Recognition
+                                                </a>
+                                                model implementation for recognizing the words spoken in audio recordings
+                                                as well as who spoke them. This was done as my Master's capstone project
+                                                with the main goal to evaluate how a newer end-to-end system performed
+                                                in comparison to traditional methods on more difficult dialogue containing
+                                                expressive, or emotional, speech.
+                                            </p>
+                                            <h2 class="fs-4 mt-4">Why?</h2>
+                                            <p>
+                                                While attending Rochester Institute of Technology, I was exposed to a lot
+                                                of deaf or hard of hearing students as it was also the home of the National
+                                                Technical Institute of the Deaf so topics like automatic speech recognition
+                                                came up often. From one of my peers, I also learned more about speaker diarization
+                                                and how it could be used to automate transcriptions and provide more rich
+                                                ASR output. Combining these two pieces with my interest for natural language 
+                                                processing and speech processing, I took this as an opportunity to learn more 
+                                                about how to create these types of systems.
+                                            </p>
+                                            <h2 class="fs-4 mt-4">My Contributions</h2>
+                                            <p>
+                                                I performed all of the work on this project (model implementation, training, 
+                                                and evaluation, technical report, and poster) with the help of my Capstone 
+                                                advisor, 
+                                                <a class="secondary-text fw-bold link-50-hover" href="https://www.rit.edu/directory/coagla-cecilia-alm" target="_blank" rel="noopener noreferrer">
+                                                    Cecilia Alm.
+                                                </a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="mb-3">
+                            <!-- Card --> 
+                            <div class="card border-0 primary-bg" data-bs-toggle="modal" data-bs-target="#webCheckers">
+                                <div class="card-body">
+                                    <h5 class="card-title primary-text">Web Checkers</h5>
+                                    <p class="card-text secondary-text">
+                                        A web application for users to play checkers against one another or against a simple
+                                        AI.
+                                    </p>
+                                    <ul class="list-unstyled d-flex flex-wrap">
+                                        <li class="me-2 mt-2">
+                                            <span class="badge tertiary-bg tertiary-text fs-6">Java</span>
+                                        </li>
+                                        <li class="me-2 mt-2">
+                                            <span class="badge tertiary-bg tertiary-text fs-6">Agile</span>
+                                        </li>
+                                        <li class="me-2 mt-2">
+                                            <span class="badge tertiary-bg tertiary-text fs-6">Spark</span>
+                                        </li>
+                                        <li class="me-2 mt-2">
+                                            <span class="badge tertiary-bg tertiary-text fs-6">JavaScript</span>
+                                        </li>
+                                        <li class="me-2 mt-2">
+                                            <span class="badge tertiary-bg tertiary-text fs-6">Maven</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div> 
+    
+                            <!-- Modal popup -->
+                            <div class="modal custom fade" id="webCheckers" tabindex="-1">
+                                <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <div class="d-flex justify-content-between" style="width: 100vw;">
+                                                <h1 class="modal-title fs-3">Web Checkers</h1>
+                                                <button type="button" class="btn secondary-text" data-bs-dismiss="modal" aria-label="Close">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                                                        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h2 class="fs-4 mt-4">Description</h2>
+                                            <p>
+                                                A web application users can sign onto and play checkers against one another
+                                                or a simple artificial intelligence bot. Able to handle multiple simultaneous
+                                                games on the server and allowed users to select who they wished to play 
+                                                against.
+                                            </p>
+                                            <h2 class="fs-4 mt-4">Why?</h2>
+                                            <p>
+                                                This was a semester long group project for a Software Engineering course  
+                                                learning about the Agile development process and developing a full 
+                                                "product" (the checkers app) for our "client" (the professor). It involved
+                                                daily standups, weekly sprints, demos and presentations, etc.
+                                            </p>
+                                            <h2 class="fs-4 mt-4">My Contributions</h2>
+                                            <p>
+                                                I worked on a lot of the backend logic for the checkers application, helped
+                                                to work out a simple AI bot, and helped design the API and communication
+                                                between the server and clients.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
                     </ol>
 
                     <div class="ms-3 mt-4">
@@ -288,8 +618,8 @@
                     </div>
                 </section>
 
-                <footer class="mt-5 mb-5 pb-5">
-                    <p class="secondary-text">Designed and built in Visual Studio Code using HTML, CSS, and the Bootstrap.</p>
+                <footer class="mt-5 pt-3 mb-5 pb-lg-4">
+                    <p class="secondary-text">Built in Visual Studio Code using HTML, CSS, and Bootstrap.</p>
                 </footer>
             </main>
         </div>
