@@ -10,10 +10,6 @@
     font-size: 1.0rem;
 }
 
-/* p {
-    font-size: 0.95em;
-} */
-
 .primary-bg { 
 	background: var(--primary); 
 }
@@ -68,6 +64,7 @@
 .card:hover {
     background: var(--secondary);
     box-shadow: 10px 10px 10px;
+    cursor: pointer;
 }
 
 .link-50-hover:hover {
