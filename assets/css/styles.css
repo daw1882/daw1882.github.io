@@ -135,28 +135,8 @@ a:hover .bi-arrow-left {
     transition: transform 100ms ease-in-out;
 }
 
-@media (min-width: 576px) {
-    .w-sm-75 {
-        width: 75%;
-    }
-}
-
 @media (min-width: 992px) {
     .w-lg-50 {
         width: 49%;
-    }
-
-    .w-lg-75 {
-        width: 75%;
-    }
-
-    .w-lg-90 {
-        width: 90%;
-    }
-}
-
-@media (min-width: 1200px) {
-    .w-xl-75 {
-        width: 75%;
     }
 }
