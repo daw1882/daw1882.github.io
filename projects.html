@@ -26,7 +26,7 @@
                 <!-- Left Column -->
             
                 <ol class="list-unstyled">
-                    <li class="mb-3">
+                    <li class="mb-3" id="graph-grad">
                         <!-- Card --> 
                         <div class="card border-0 primary-bg " data-bs-toggle="modal" data-bs-target="#graphGrad">
                             <div class="card-body">
@@ -83,7 +83,7 @@
                                         </div>
                                         <h2 class="fs-4 mt-4">Description</h2>
                                         <p>
-                                            A custom built C++ tensor library to perform matrix and tensor operations
+                                            A custom-built C++ tensor library to perform matrix and tensor operations
                                             efficiently with automatic differentiation support for machine learning
                                             algorithms (a simplified version of PyTorch/TensorFlow). The library allows
                                             for multiple operations such as add, subtract, matmul, etc. and supports
@@ -113,7 +113,7 @@
                         </div>
                     </li>
 
-                    <li class="mb-3">
+                    <li class="mb-3" id="text-recovery">
                         <!-- Card --> 
                         <div class="card border-0 primary-bg" data-bs-toggle="modal" data-bs-target="#textRecovery">
                             <div class="card-body">
@@ -203,7 +203,7 @@
                         </div>
                     </li>
 
-                    <li class="mb-3">
+                    <li class="mb-3" id="speaker-diarization">
                         <!-- Card --> 
                         <div class="card border-0 primary-bg" data-bs-toggle="modal" data-bs-target="#projectThree">
                             <div class="card-body">
@@ -288,7 +288,77 @@
                         </div>
                     </li>
 
-                    <li class="mb-3">
+                    <li class="mb-3" id="web-checkers">
+                        <!-- Card --> 
+                        <div class="card border-0 primary-bg" data-bs-toggle="modal" data-bs-target="#webCheckers">
+                            <div class="card-body">
+                                <h5 class="card-title primary-text">Web Checkers</h5>
+                                <p class="card-text secondary-text">
+                                    A web application for users to play checkers against one another or against a simple
+                                    AI.
+                                </p>
+                                <ul class="list-unstyled d-flex flex-wrap">
+                                    <li class="me-2 mt-2">
+                                        <span class="badge tertiary-bg tertiary-text fs-6">Java</span>
+                                    </li>
+                                    <li class="me-2 mt-2">
+                                        <span class="badge tertiary-bg tertiary-text fs-6">Agile</span>
+                                    </li>
+                                    <li class="me-2 mt-2">
+                                        <span class="badge tertiary-bg tertiary-text fs-6">Spark</span>
+                                    </li>
+                                    <li class="me-2 mt-2">
+                                        <span class="badge tertiary-bg tertiary-text fs-6">JavaScript</span>
+                                    </li>
+                                    <li class="me-2 mt-2">
+                                        <span class="badge tertiary-bg tertiary-text fs-6">Maven</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div> 
+
+                        <!-- Modal popup -->
+                        <div class="modal custom fade" id="webCheckers" tabindex="-1">
+                            <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <div class="d-flex justify-content-between" style="width: 100vw;">
+                                            <h1 class="modal-title fs-3">Web Checkers</h1>
+                                            <button type="button" class="btn secondary-text" data-bs-dismiss="modal" aria-label="Close">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                                                    <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="modal-body">
+                                        <h2 class="fs-4 mt-4">Description</h2>
+                                        <p>
+                                            A web application users can sign onto and play checkers against one another
+                                            or a simple artificial intelligence bot. Able to handle multiple simultaneous
+                                            games on the server and allowed users to select who they wished to play 
+                                            against.
+                                        </p>
+                                        <h2 class="fs-4 mt-4">Why?</h2>
+                                        <p>
+                                            This was a semester long group project for a Software Engineering course  
+                                            learning about the Agile development process and developing a full 
+                                            "product" (the checkers app) for our "client" (the professor). It involved
+                                            daily stand-ups, weekly sprints, demos and presentations, etc.
+                                        </p>
+                                        <h2 class="fs-4 mt-4">My Contributions</h2>
+                                        <p>
+                                            I worked on a lot of the backend logic for the checkers application, helped
+                                            to work out a simple AI bot, and helped design the API and communication
+                                            between the server and clients.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="mb-3" id="traffic-camera">
                         <!-- Card --> 
                         <div class="card border-0 primary-bg" data-bs-toggle="modal" data-bs-target="#trafficCam">
                             <div class="card-body">
@@ -363,7 +433,7 @@
                         </div>
                     </li>
 
-                    <!-- <li class="mb-3">
+                    <li class="mb-3" id="emotion-recognition">
                         <div class="card border-0 primary-bg" data-bs-toggle="modal" data-bs-target="#emotionRecognition">
                             <div class="card-body">
                                 <h5 class="card-title primary-text">Speech Emotion Recognizer</h5>
@@ -380,6 +450,12 @@
                                     <li class="me-2 mt-2">
                                         <span class="badge tertiary-bg tertiary-text fs-6">Speech Processing</span>
                                     </li>
+                                    <li class="me-2 mt-2">
+                                        <span class="badge tertiary-bg tertiary-text fs-6">Librosa</span>
+                                    </li>
+                                    <li class="me-2 mt-2">
+                                        <span class="badge tertiary-bg tertiary-text fs-6">PyGame</span>
+                                    </li>
                                 </ul>
                             </div>
                         </div> 
@@ -389,7 +465,7 @@
                                 <div class="modal-content">
                                     <div class="modal-header">
                                         <div class="d-flex justify-content-between" style="width: 100vw;">
-                                            <h1 class="modal-title fs-3">ProjectTitle</h1>
+                                            <h1 class="modal-title fs-3">Speech Emotion Recognizer</h1>
                                             <button type="button" class="btn secondary-text" data-bs-dismiss="modal" aria-label="Close">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
                                                     <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
@@ -399,7 +475,7 @@
                                     </div>
                                     <div class="modal-body">
                                         <div class="fs-3">
-                                            <a class="secondary-text link-50-hover fw-bold" href="" target="_blank" rel="noreferrer noopener">
+                                            <a class="secondary-text link-50-hover fw-bold" href="https://github.com/daw1882/Voice-Emotion-Recognition" target="_blank" rel="noreferrer noopener">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16" style="transform: translate(0px, -2px);">
                                                     <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
                                                 </svg>
@@ -411,15 +487,30 @@
                                         </div>
                                         <h2 class="fs-4 mt-4">Description</h2>
                                         <p>
-                                            text
+                                            An emotion recognition model for recognizing 7 different emotions - anger, disgust, 
+                                            fear, sadness, happiness, neutrality, and surprise - with a PyGame UI for uploading
+                                            or recording voice clips for the model to evaluate. Model was created using 
+                                            TensorFlow/Keras and trained using the 
+                                            <a class="secondary-text fw-bold link-50-hover" href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0196391" target="_blank" rel="noopener noreferrer">
+                                                RAVDESS
+                                            </a> and 
+                                            <a class="secondary-text fw-bold link-50-hover" href="https://tspace.library.utoronto.ca/handle/1807/24487" target="_blank" rel="noopener noreferrer">
+                                                TESS
+                                            </a> 
+                                            datasets. Data was preprocessed with the numpy, pandas, and librosa Python libraries.
                                         </p>
                                         <h2 class="fs-4 mt-4">Why?</h2>
                                         <p>
-                                            text
+                                            How computers process and understand language has always been an interest of mine, and 
+                                            I am more specifically interested in the intersection between language and emotion 
+                                            as it is a particularly difficult area to interpret, even for humans. Therefore,
+                                            I used this project as an opportunity to learn more about emotion and some of the 
+                                            features that can be used to detect it for computers.
                                         </p>
                                         <h2 class="fs-4 mt-4">My Contributions</h2>
                                         <p>
-                                            text
+                                            This was an individual project where I implemented, trained, and created
+                                            the interface to interact with the model.
                                         </p>
                                     </div>
                                 </div>
@@ -427,7 +518,7 @@
                         </div>
                     </li>
 
-                    <li class="mb-3">
+                    <li class="mb-3" id="twitter-depression">
                         <div class="card border-0 primary-bg" data-bs-toggle="modal" data-bs-target="#depressionDetect">
                             <div class="card-body">
                                 <h5 class="card-title primary-text">Twitter Depression Detection</h5>
@@ -457,7 +548,7 @@
                                 <div class="modal-content">
                                     <div class="modal-header">
                                         <div class="d-flex justify-content-between" style="width: 100vw;">
-                                            <h1 class="modal-title fs-3">ProjectTitle</h1>
+                                            <h1 class="modal-title fs-3">Twitter Depression Detection</h1>
                                             <button type="button" class="btn secondary-text" data-bs-dismiss="modal" aria-label="Close">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
                                                     <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
@@ -467,7 +558,7 @@
                                     </div>
                                     <div class="modal-body">
                                         <div class="fs-3">
-                                            <a class="secondary-text link-50-hover fw-bold" href="" target="_blank" rel="noreferrer noopener">
+                                            <a class="secondary-text link-50-hover fw-bold" href="https://github.com/daw1882/Tweet-Depression-Detection" target="_blank" rel="noreferrer noopener">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16" style="transform: translate(0px, -2px);">
                                                     <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
                                                 </svg>
@@ -479,85 +570,23 @@
                                         </div>
                                         <h2 class="fs-4 mt-4">Description</h2>
                                         <p>
-                                            text
+                                            A depression detection system for Twitter users based on Tweet history and activity. 
+                                            The focus of this project was on feature engineering and analysis or which features
+                                            were more predictive for the task through the use of the pandas, scikit-learn,
+                                            and nltk Python libraries. 
                                         </p>
                                         <h2 class="fs-4 mt-4">Why?</h2>
                                         <p>
-                                            text
+                                            This was a group class project for a natural language processing class, and we wanted
+                                            to explore an application involving "messier" text such as that in tweets with 
+                                            slang, improper grammar, and emojis. Since I have an interest in emotion in language,
+                                            we decided our application would be depression detection and researching features that
+                                            would be suitable for this task.
                                         </p>
                                         <h2 class="fs-4 mt-4">My Contributions</h2>
                                         <p>
-                                            text
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li> -->
-
-                    <li class="mb-3">
-                        <!-- Card --> 
-                        <div class="card border-0 primary-bg" data-bs-toggle="modal" data-bs-target="#webCheckers">
-                            <div class="card-body">
-                                <h5 class="card-title primary-text">Web Checkers</h5>
-                                <p class="card-text secondary-text">
-                                    A web application for users to play checkers against one another or against a simple
-                                    AI.
-                                </p>
-                                <ul class="list-unstyled d-flex flex-wrap">
-                                    <li class="me-2 mt-2">
-                                        <span class="badge tertiary-bg tertiary-text fs-6">Java</span>
-                                    </li>
-                                    <li class="me-2 mt-2">
-                                        <span class="badge tertiary-bg tertiary-text fs-6">Agile</span>
-                                    </li>
-                                    <li class="me-2 mt-2">
-                                        <span class="badge tertiary-bg tertiary-text fs-6">Spark</span>
-                                    </li>
-                                    <li class="me-2 mt-2">
-                                        <span class="badge tertiary-bg tertiary-text fs-6">JavaScript</span>
-                                    </li>
-                                    <li class="me-2 mt-2">
-                                        <span class="badge tertiary-bg tertiary-text fs-6">Maven</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div> 
-
-                        <!-- Modal popup -->
-                        <div class="modal custom fade" id="webCheckers" tabindex="-1">
-                            <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <div class="d-flex justify-content-between" style="width: 100vw;">
-                                            <h1 class="modal-title fs-3">Web Checkers</h1>
-                                            <button type="button" class="btn secondary-text" data-bs-dismiss="modal" aria-label="Close">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
-                                                    <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
-                                                </svg>
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <div class="modal-body">
-                                        <h2 class="fs-4 mt-4">Description</h2>
-                                        <p>
-                                            A web application users can sign onto and play checkers against one another
-                                            or a simple artificial intelligence bot. Able to handle multiple simultaneous
-                                            games on the server and allowed users to select who they wished to play 
-                                            against.
-                                        </p>
-                                        <h2 class="fs-4 mt-4">Why?</h2>
-                                        <p>
-                                            This was a semester long group project for a Software Engineering course  
-                                            learning about the Agile development process and developing a full 
-                                            "product" (the checkers app) for our "client" (the professor). It involved
-                                            daily stand-ups, weekly sprints, demos and presentations, etc.
-                                        </p>
-                                        <h2 class="fs-4 mt-4">My Contributions</h2>
-                                        <p>
-                                            I worked on a lot of the backend logic for the checkers application, helped
-                                            to work out a simple AI bot, and helped design the API and communication
-                                            between the server and clients.
+                                            I contributed the feature extraction, model creation, model evaluation, some report 
+                                            writing/reviewing, and some presentation writing for this project.
                                         </p>
                                     </div>
                                 </div>
@@ -565,7 +594,7 @@
                         </div>
                     </li>
 
-                    <!-- <li class="mb-3">
+                    <li class="mb-3" id="voice-cloning-site">
                          
                         <div class="card border-0 primary-bg" data-bs-toggle="modal" data-bs-target="#voiceCloning">
                             <div class="card-body">
@@ -578,6 +607,12 @@
                                     <li class="me-2 mt-2">
                                         <span class="badge tertiary-bg tertiary-text fs-6">Python</span>
                                     </li>
+                                    <li class="me-2 mt-2">
+                                        <span class="badge tertiary-bg tertiary-text fs-6">Speech Processing</span>
+                                    </li>
+                                    <li class="me-2 mt-2">
+                                        <span class="badge tertiary-bg tertiary-text fs-6">ChatGPT</span>
+                                    </li>
                                 </ul>
                             </div>
                         </div> 
@@ -588,7 +623,7 @@
                                 <div class="modal-content">
                                     <div class="modal-header">
                                         <div class="d-flex justify-content-between" style="width: 100vw;">
-                                            <h1 class="modal-title fs-3">ProjectTitle</h1>
+                                            <h1 class="modal-title fs-3">Voice Cloning Resume Website</h1>
                                             <button type="button" class="btn secondary-text" data-bs-dismiss="modal" aria-label="Close">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
                                                     <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
@@ -598,11 +633,8 @@
                                     </div>
                                     <div class="modal-body">
                                         <div class="fs-3">
-                                            <a class="secondary-text link-50-hover fw-bold" href="" target="_blank" rel="noreferrer noopener">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16" style="transform: translate(0px, -2px);">
-                                                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
-                                                </svg>
-                                                <span>Github Repo</span>
+                                            <a class="secondary-text link-50-hover fw-bold" href="https://sites.google.com/g.rit.edu/speech-processing-project-1/home" target="_blank" rel="noreferrer noopener">
+                                                <span>Project Information</span>
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-up-right-short" viewBox="0 0 16 16">
                                                     <path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5"/>
                                                 </svg>
@@ -610,21 +642,32 @@
                                         </div>
                                         <h2 class="fs-4 mt-4">Description</h2>
                                         <p>
-                                            text
+                                            A website demo for using ChatGPT to create a question-answer experience for asking
+                                            questions about one's resume and receiving answers in a text-to-speech system using
+                                            voice cloning to replicate the voice of the resume owner. Voice cloning was performed 
+                                            using the 
+                                            <a class="secondary-text fw-bold link-50-hover" href="https://github.com/neonbjb/tortoise-tts" target="_blank" rel="noopener noreferrer">
+                                                Tortoise-TTS
+                                            </a> model set up on HuggingFace Space.
                                         </p>
                                         <h2 class="fs-4 mt-4">Why?</h2>
                                         <p>
-                                            text
+                                            As a group project for a speech processing course, we wanted to explore the topic of 
+                                            voice cloning and as we were nearing graduation, a practical application for a resume 
+                                            website was a fun use case to try it on. This allowed us to learn about the topic while 
+                                            also creating something a system to potentially use for ourselves in the future.
                                         </p>
                                         <h2 class="fs-4 mt-4">My Contributions</h2>
                                         <p>
-                                            text
+                                            I managed the model interactions and designed the evaluation methodology for 
+                                            determining how well our voices were cloned. I additionally helped with report and 
+                                            presentation writing.
                                         </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </li> -->
+                    </li>
 
                 </ol>
 
